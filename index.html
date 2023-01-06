@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            
+            box-sizing: border-box;
+        }
         table {
             background-color: antiquewhite;
 
@@ -24,7 +28,7 @@
             list-style-type: none;
         }
         #footer{
-            background-color: brown;
+            background-color: gray;
         }
         h4{
             color: fuchsia;
@@ -56,8 +60,8 @@
 
         .nev {
             list-style-type: none;
-            text-align: end;
-            ;
+            /* text-align: end;
+            width: 100%; */
 
 
 
@@ -68,19 +72,25 @@
         h2 {
             color: royalblue;
         }
+       
 
-        .aab {
-            display: inline;
-            padding: 10px;
-            background-color: blanchedalmond;
-            margin: 50px;
-
+        
+        .box{
+            
+            margin: 10px;
+            
+            
         }
-
-        #nav {
-            border: 1px solid brown;
-            background-color: brown;
-            margin: 0px;
+        .container{
+            width: 100%;
+            
+            display: flex;
+            /* flex-direction: row-reverse; */
+            margin-left: 0px;
+            /* justify-content: center; */
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: ;
 
         }
     </style>
@@ -91,13 +101,28 @@
         <section id="nev">
             <nav id="nav">
                 <ul class="nev">
-                    <li class="aab"> <a href="#Education">Education</a></li>
-                    <li class="aab"> <a href="#EXPIRENCE">Expirence</a></li>
-                    <li class="aab"> <a href="#projects">projects</a></li>
-                    <li class="aab"> <a href="#projects">projects</a></li>
-                    <li class="aab"> <a href="#mini project"> mini projects</a></li>
-                    <li class="aab"> <a href="#skills">skills</a></li>
-                    <li class="aab"> <a href="#strength">strength</a></li>
+                   <div class="container">
+                    <div class="box">
+                        <li class="aab" > <a href="#Education">Education</a></li>
+                    </div>
+                    <div class="box">
+                        <li class="aab"> <a href="#EXPIRENCE">Expirence</a></li>
+                    </div>
+                    <div class="box">
+                        <li class="aab"> <a href="#projects">projects</a>
+                        </li>
+                    </div>
+                    
+                    <div class="box">
+                        <li class="aab"> <a href="#mini project"> mini projects</a></li>
+                    </div>
+                    <div class="box">
+                        <li class="aab"> <a href="#skills">skills</a></li>
+                    </div>
+                    <div class="box">
+                        <li class="aab"> <a href="#strength">strength</a></li>
+                    </div>
+                   </div>
 
                 </ul>
             </nav>
